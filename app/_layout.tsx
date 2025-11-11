@@ -1,5 +1,5 @@
 import { Stack } from "expo-router";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { supabase } from "../config/supabase";
 import { useAuthStore } from "../store/authStore";
 
@@ -7,7 +7,6 @@ export default function RootLayout() {
   const { setUser, setLoading } = useAuthStore();
 
   useEffect(() => {
-    // Check current session
     supabase.auth.getSession().then(({ data: { session } }) => {
       if (session?.user) {
         supabase
@@ -21,8 +20,11 @@ export default function RootLayout() {
                 id: data.id,
                 email: data.email,
                 display_name: data.display_name,
+                avatar_url: data.avatar_url,
                 created_at: data.created_at,
               });
+            } else {
+              setLoading(false);
             }
           });
       } else {
@@ -30,7 +32,6 @@ export default function RootLayout() {
       }
     });
 
-    // Listen for auth changes
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange(async (event, session) => {
@@ -46,6 +47,7 @@ export default function RootLayout() {
             id: data.id,
             email: data.email,
             display_name: data.display_name,
+            avatar_url: data.avatar_url,
             created_at: data.created_at,
           });
         }

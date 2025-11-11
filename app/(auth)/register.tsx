@@ -48,7 +48,6 @@ export default function Register() {
 
     setLoading(true);
     try {
-      // Sign up the user
       const { data: authData, error: authError } = await supabase.auth.signUp({
         email,
         password,
@@ -56,7 +55,6 @@ export default function Register() {
 
       if (authError) throw authError;
 
-      // Create user profile
       if (authData.user) {
         const { error: profileError } = await supabase.from("users").insert({
           id: authData.user.id,

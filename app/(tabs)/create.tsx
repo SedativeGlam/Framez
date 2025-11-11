@@ -50,7 +50,6 @@ export default function Create() {
       const response = await fetch(uri);
       const blob = await response.blob();
 
-      // Convert blob to base64
       const reader = new FileReader();
       const base64Promise = new Promise<string>((resolve, reject) => {
         reader.onloadend = () => {

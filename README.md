@@ -1,18 +1,42 @@
-# 📱 Framez - Mobile Social Application (Supabase Edition)
+# Framez - Mobile Social Application
 
 A modern, Instagram-inspired mobile social media app built with React Native, Expo, Supabase, and TypeScript.
 
-## ✨ Features
+## Complete Features
 
-- **User Authentication**: Secure email/password authentication with Supabase Auth
-- **Persistent Sessions**: Users remain logged in after closing the app
-- **Create Posts**: Share text and images with the community
-- **Real-time Feed**: View all posts in chronological order with automatic updates
-- **User Profile**: View personal profile and all your posts
-- **Image Upload**: Pick and upload images to Supabase Storage
-- **Modern UI**: Clean, Instagram-inspired design with smooth animations
+### Authentication
+- Email/Password authentication
+- Persistent sessions (stay logged in)
+- Secure logout
 
-## 🛠 Tech Stack
+### Posts
+- Create posts with text and images
+- View feed of all posts
+- Real-time updates
+- Pull-to-refresh on feed and profile
+
+### Social Interactions
+- Like posts
+- Unlike posts
+- Comment on posts
+- View all comments
+- Share button
+- Real-time like and comment counts
+
+### Profile
+- View personal profile
+- See all your posts
+- Post count display
+- Pull-to-refresh profile
+- Auto-refresh when creating posts
+
+### UI/UX
+- Instagram-inspired design
+- Loading states
+- Empty states
+- Modal for comments
+
+## Tech Stack
 
 - **Framework**: React Native (Expo SDK 50)
 - **Language**: TypeScript
@@ -118,24 +142,21 @@ npx expo start
 
 ## 🔒 Security Features
 
-- **Row Level Security (RLS)**: Enabled on all tables
+- **Row Level Security (RLS)**: Enabled
 - **Authentication**: Required for creating posts
 - **Authorization**: Users can only modify their own content
-- **Storage Policies**: Restricted file uploads and access
 
 ## 🎨 Key Features Explained
 
 ### Real-time Updates
 Supabase Realtime subscriptions automatically update the feed when:
 - New posts are created
-- Posts are updated or deleted
 - No manual refresh needed (pull-to-refresh available)
 
 ### Image Handling
 - Images are converted to base64
 - Uploaded to Supabase Storage
 - Public URLs are stored in the database
-- Automatic cleanup on post deletion
 
 ### Session Management
 - Sessions persist using AsyncStorage
@@ -198,34 +219,11 @@ eas build --platform android --profile preview
 4. Select your build file
 5. Get the shareable link
 
-## 📝 Future Enhancements
-
-- [ ] Like and comment functionality
-- [ ] Follow/unfollow users
-- [ ] Direct messaging
-- [ ] Push notifications
-- [ ] Story feature
-- [ ] Dark mode support
-- [ ] Profile picture upload
-- [ ] Post editing and deletion UI
-- [ ] Image filters
-- [ ] Hashtags and search
-
 ## 🔑 Environment Variables
 ```env
 EXPO_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 EXPO_PUBLIC_SUPABASE_ANON_KEY=your-anon-key-here
 ```
-
-## 📄 License
-
-MIT License - feel free to use this project for learning and development.
-
-## 👏 Acknowledgments
-
-- Inspired by Instagram's clean, modern design
-- Built with love using React Native and Supabase
-- Special thanks to the Expo and Supabase teams
 
 ## 📞 Support
 
@@ -234,7 +232,3 @@ For issues or questions:
 - Review Supabase documentation: https://supabase.com/docs
 - Check Expo documentation: https://docs.expo.dev
 - Open an issue on GitHub
-
----
-
-**Built with ❤️ using React Native & Supabase**# Framez
