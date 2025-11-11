@@ -237,4 +237,4 @@ For issues or questions:
 
 ---
 
-**Built with ❤️ using React Native & Supabase**
+**Built with ❤️ using React Native & Supabase**# Framez
