@@ -12,7 +12,7 @@ export default function TabLayout() {
           backgroundColor: "#ffffff",
           borderTopWidth: 1,
           borderTopColor: "#e5e7eb",
-          height: Platform.OS === "ios" ? 88 : 60,
+          height: Platform.OS === "ios" ? 88 : 70,
           paddingBottom: Platform.OS === "ios" ? 28 : 8,
           paddingTop: 8,
         },

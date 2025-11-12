@@ -19,7 +19,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.sedativeglam.framez"
     },
     "web": {
       "output": "static",
@@ -47,7 +48,11 @@
     },
     "extra": {
       "EXPO_PUBLIC_SUPABASE_URL": "https://jbkdgsopttesckrgmhwr.supabase.co",
-      "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Impia2Rnc29wdHRlc2NrcmdtaHdyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI4MTA0MjMsImV4cCI6MjA3ODM4NjQyM30.yocI1gOV2UuE0hjbCIByPmJIYMrfurO7xmZq0v5zfSA"
+      "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Impia2Rnc29wdHRlc2NrcmdtaHdyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI4MTA0MjMsImV4cCI6MjA3ODM4NjQyM30.yocI1gOV2UuE0hjbCIByPmJIYMrfurO7xmZq0v5zfSA",
+      "router": {},
+      "eas": {
+        "projectId": "3630e99d-4026-42ad-bc35-7ec308dad7ea"
+      }
     }
   }
 }
