@@ -82,7 +82,7 @@ export default function Register() {
         { text: "OK", onPress: () => router.replace("/(tabs)/feed") },
       ]);
     } catch (error: any) {
-      Alert.alert("Registration Failed", error.message);
+      Alert.alert("Registration Failed hh", error.message);
     } finally {
       setLoading(false);
     }
